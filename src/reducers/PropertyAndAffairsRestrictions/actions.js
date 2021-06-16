@@ -1,0 +1,45 @@
+import { createAction } from "redux-actions"
+
+export const PROPERTY_AFFAIRS_RESTRICTIONS_OPTIONS =
+  "PROPERTY_AFFAIRS_RESTRICTIONS_OPTIONS"
+export const propertyAffairsRestrictionsOptions = createAction(
+  PROPERTY_AFFAIRS_RESTRICTIONS_OPTIONS,
+  ({ orderId }) => ({
+    key: `PROPERTY_AFFAIRS_RESTRICTIONS`,
+    orderId: orderId,
+  })
+)
+
+export const ADD_PROPERTY_AFFAIRS_RESTRICTIONS_FORM =
+  "ADD_PROPERTY_AFFAIRS_RESTRICTIONS_FORM"
+export const SUCCESS_ADD_PROPERTY_AFFAIRS_RESTRICTIONS_FORM =
+  "SUCCESS_ADD_PROPERTY_AFFAIRS_RESTRICTIONS_FORM"
+export const FAILURE_ADD_PROPERTY_AFFAIRS_RESTRICTIONS_FORM =
+  "FAILURE_ADD_PROPERTY_AFFAIRS_RESTRICTIONS_FORM"
+
+export const addPropertyAffairsRestrictions = createAction(
+  ADD_PROPERTY_AFFAIRS_RESTRICTIONS_FORM
+)
+export const successAddPropertyAffairsRestrictions = createAction(
+  SUCCESS_ADD_PROPERTY_AFFAIRS_RESTRICTIONS_FORM
+)
+export const failureAddPropertyAffairsRestrictions = createAction(
+  FAILURE_ADD_PROPERTY_AFFAIRS_RESTRICTIONS_FORM
+)
+
+export const DELETE_PROPERTY_AFFAIRS_RESTRICTIONS =
+  "DELETE_PROPERTY_AFFAIRS_RESTRICTIONS"
+export const SUCCESS_DELETE_PROPERTY_AFFAIRS_RESTRICTIONS =
+  "SUCCESS_DELETE_PROPERTY_AFFAIRS_RESTRICTIONS"
+export const FAILURE_DELETE_PROPERTY_AFFAIRS_RESTRICTIONS =
+  "FAILURE_DELETE_PROPERTY_AFFAIRS_RESTRICTIONS"
+
+export const deletePropertyAffairsRestrictions = createAction(
+  DELETE_PROPERTY_AFFAIRS_RESTRICTIONS
+)
+export const successDeletePropertyAffairsRestrictions = createAction(
+  SUCCESS_DELETE_PROPERTY_AFFAIRS_RESTRICTIONS
+)
+export const failureDeletePropertyAffairsRestrictions = createAction(
+  FAILURE_DELETE_PROPERTY_AFFAIRS_RESTRICTIONS
+)

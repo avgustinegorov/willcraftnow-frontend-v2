@@ -1,0 +1,45 @@
+import { createAction } from "redux-actions"
+
+export const PERSONAL_WELFARE_RESTRICTIONS_OPTIONS =
+  "PERSONAL_WELFARE_RESTRICTIONS_OPTIONS"
+export const personalWelfareRestrictionsOptions = createAction(
+  PERSONAL_WELFARE_RESTRICTIONS_OPTIONS,
+  ({ orderId }) => ({
+    key: `PERSONAL_WELFARE_RESTRICTIONS`,
+    orderId: orderId,
+  })
+)
+
+export const ADD_PERSONAL_WELFARE_RESTRICTIONS_FORM =
+  "ADD_PERSONAL_WELFARE_RESTRICTIONS_FORM"
+export const SUCCESS_ADD_PERSONAL_WELFARE_RESTRICTIONS_FORM =
+  "SUCCESS_ADD_PERSONAL_WELFARE_RESTRICTIONS_FORM"
+export const FAILURE_ADD_PERSONAL_WELFARE_RESTRICTIONS_FORM =
+  "FAILURE_ADD_PERSONAL_WELFARE_RESTRICTIONS_FORM"
+
+export const addPersonalWelfareRestrictions = createAction(
+  ADD_PERSONAL_WELFARE_RESTRICTIONS_FORM
+)
+export const successAddPersonalWelfareRestrictions = createAction(
+  SUCCESS_ADD_PERSONAL_WELFARE_RESTRICTIONS_FORM
+)
+export const failureAddPersonalWelfareRestrictions = createAction(
+  FAILURE_ADD_PERSONAL_WELFARE_RESTRICTIONS_FORM
+)
+
+export const DELETE_PERSONAL_WELFARE_RESTRICTIONS =
+  "DELETE_PERSONAL_WELFARE_RESTRICTIONS"
+export const SUCCESS_DELETE_PERSONAL_WELFARE_RESTRICTIONS =
+  "SUCCESS_DELETE_PERSONAL_WELFARE_RESTRICTIONS"
+export const FAILURE_DELETE_PERSONAL_WELFARE_RESTRICTIONS =
+  "FAILURE_DELETE_PERSONAL_WELFARE_RESTRICTIONS"
+
+export const deletePersonalWelfareRestrictions = createAction(
+  DELETE_PERSONAL_WELFARE_RESTRICTIONS
+)
+export const successDeletePersonalWelfareRestrictions = createAction(
+  SUCCESS_DELETE_PERSONAL_WELFARE_RESTRICTIONS
+)
+export const failureDeletePersonalWelfareRestrictions = createAction(
+  FAILURE_DELETE_PERSONAL_WELFARE_RESTRICTIONS
+)
